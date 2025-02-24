@@ -1,0 +1,7 @@
+sam:
+  model_checkpoint: "sam_vit_h_4b8939.pth"
+
+inpainting:
+  model_name: "stabilityai/stable-diffusion-2-inpainting"
+
+device: "cuda"  # Options: 'cuda', 'cpu'
