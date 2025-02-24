@@ -1,104 +1,36 @@
 CustomPix: Advanced AI-Powered Image Editor
-CustomPix is a cutting-edge AI-powered image editing platform that leverages state-of-the-art machine learning models to provide advanced features such as inpainting, object removal, background replacement, and subject substitution. Designed with an intuitive user interface, CustomPix enables seamless real-time editing for diverse image resolutions and formats.
+CustomPix is an advanced AI-powered image editing platform that provides seamless tools for inpainting, object removal, background replacement, and subject substitution. With an intuitive user interface powered by Gradio, CustomPix allows users to manipulate images effortlessly using state-of-the-art machine learning models such as SAM (Segment Anything Model) and Stable Diffusion.
 
-Features
-Core Functionalities
-Inpainting: Restore missing regions or remove unwanted objects seamlessly.
+Overview
+CustomPix enables users to perform a variety of image editing tasks, including:
 
-Object Removal: Erase unwanted objects, defects, or watermarks from images.
+Background substitution
 
-Background Replacement: Replace the background with AI-generated content based on text prompts.
+Subject substitution
 
-Subject Substitution: Replace a subject while preserving the original background.
+Object removal
 
-User Interface (UI/UX) Features
-Intuitive drag-and-drop image upload.
+Advanced inpainting
 
-Interactive mask editor for drawing or erasing masks.
+The workflow involves uploading an image, selecting objects interactively, refining masks as needed, and providing text prompts to guide AI-based edits. Users can swap out the background or substitute the subject while retaining the original background.
 
-Text prompt field for generating AI-based edits.
+<div align="center"> <img src="./assets/ui_mockup.png" alt="CustomPix UI Mockup: Before and After Comparison" width="800"> </div>
+Before Processing
+Users upload an input image.
 
-Real-time progress indicators during processing.
-
-Gallery to display editing history and multiple results.
-
-System Requirements
-Hardware
-A system with a modern GPU (NVIDIA recommended) for optimal performance.
-
-Minimum 8GB RAM (16GB recommended).
-
-Software
-Python 3.8 or higher
-
-CUDA Toolkit (if using GPU acceleration)
-
-Supported operating systems: Windows, macOS, Linux
-
-Installation
-Clone the repository:
-
-bash
-git clone https://github.com/yourusername/CustomPix.git
-cd CustomPix
-Create a virtual environment:
-
-bash
-python -m venv CUSTOMPIX_ENV
-Activate the virtual environment:
-
-On Windows:
-
-bash
-CUSTOMPIX_ENV\Scripts\activate
-On macOS/Linux:
-
-bash
-source CUSTOMPIX_ENV/bin/activate
-Install dependencies:
-
-bash
-pip install -r requirements.txt
-Download pre-trained model weights:
-
-For SAM (Segment Anything Model), download weights from Meta's SAM repository.
-
-For Stable Diffusion Inpainting, weights will be downloaded automatically when first used.
-
-Usage
-Run the application:
-
-bash
-python src/main.py
-Open the Gradio interface in your browser (usually at http://127.0.0.1:7860).
-
-Upload an image, draw masks using the mask editor, and enter a text prompt for inpainting or other edits.
-
-View the processed output and editing history in the gallery.
-
-UI Mockup
-Below is a conceptual representation of the CustomPix user interface:
-
-Before Processing:
-Users can upload an input image.
-
-Utilize the mask editor to draw or erase areas for editing.
+Use the mask editor to draw or erase areas for editing.
 
 Enter text prompts to guide AI-based edits.
 
-After Processing:
+After Processing
 The processed output image is displayed prominently.
 
 A gallery shows previous edits and allows users to revisit their history.
-
-CustomPix UI Mockup
 
 How It Works
 Object Selection:
 
 The Segment Anything Model (SAM) generates masks for objects in the uploaded image.
-
-Mask Refinement:
 
 Users can refine masks manually using the interactive editor.
 
@@ -114,8 +46,42 @@ History Viewer:
 
 The gallery component allows users to view past edits and compare results.
 
-Development Workflow
-Project Structure:
+How to Execute
+1. Clone this repository
+bash
+git clone https://github.com/yourusername/CustomPix.git
+cd CustomPix
+2. Create a virtual environment
+bash
+python -m venv CUSTOMPIX_ENV
+Activate the environment:
+
+On Windows:
+
+bash
+CUSTOMPIX_ENV\Scripts\activate
+On macOS/Linux:
+
+bash
+source CUSTOMPIX_ENV/bin/activate
+3. Install requirements
+bash
+pip install -r requirements.txt
+4. Run the application
+bash
+python src/main.py
+This will launch the Gradio interface locally at http://127.0.0.1:7860. Open this URL in your browser to access CustomPix.
+
+Examples
+Example 1: Background Replacement
+<div align="center"> <img src="./assets/example_before.jpg" alt="Before Background Replacement" width="400"> <img src="./assets/example_after.jpg" alt="After Background Replacement" width="400"> </div>
+In this example, the user replaced a plain background with a serene beach scene by providing a text prompt: "A serene beach with clear blue skies."
+
+Example 2: Object Removal
+<div align="center"> <img src="./assets/object_removal_before.jpg" alt="Before Object Removal" width="400"> <img src="./assets/object_removal_after.jpg" alt="After Object Removal" width="400"> </div>
+Here, an unwanted object (a chair) was seamlessly removed from the image using CustomPix's inpainting feature.
+
+Project Structure
 text
 CustomPix/
 ├── src/
