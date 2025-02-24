@@ -15,7 +15,7 @@ CustomPix enables users to perform a variety of image editing tasks, including:
 
 The workflow involves uploading an image, selecting objects interactively, refining masks as needed, and providing text prompts to guide AI-based edits. Users can swap out the background or substitute the subject while retaining the original background.
 
-![CustomPix UI Mockup](./assets/ui_mockup.png)
+![CustomPix UI Mockup](./assets/ui_photo.png)
 
 ---
 
