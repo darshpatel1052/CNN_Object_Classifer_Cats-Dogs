@@ -77,7 +77,7 @@ This will launch the Gradio interface locally at `http://127.0.0.1:7860`. Open t
 
 ### Example 1: Background Replacement
 
-![Before](./assets/example_before.jpg) ![After](./assets/example_after.jpg)
+![Before](./assets/before.jpg) ![After](./assets/after.jpg)
 
 In this example, the user replaced a plain background with a serene beach scene by providing a text prompt: *"A serene beach with clear blue skies."*
 
