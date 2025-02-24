@@ -83,7 +83,7 @@ In this example, the user replaced a plain background with a serene beach scene 
 
 ### Example 2: Object Removal
 
-![Before](./assets/object_removal_before.jpg) ![After](./assets/object_removal_after.jpg)
+![Before](./assets/before_dog.png) ![After](./assets/after_dog.png)
 
 Here, an unwanted object (a chair) was seamlessly removed from the image using CustomPix's inpainting feature.
 
